@@ -26,37 +26,3 @@ Process:
     Lasso regression is applied to estimate the coefficients.
     The coefficients are stored, and a symmetric weight matrix final_W is computed by averaging the coefficient matrix and its transpose.
 
-## Example Usage:
-
-python
-
-import numpy as np
-from sklearn.linear_model import Lasso
-from your_module import nodewise_regression
-
-# Example data
-X = np.random.rand(100, 10)  # 100 time steps, 10 variables
-alpha = 0.1
-
-# Perform nodewise regression
-W = nodewise_regression(X, alpha)
-
-# Print the result
-print(W)
-
-Dependencies
-
-    numpy
-    scikit-learn
-
-You can install the required libraries using the following command:
-
-bash
-
-pip install numpy scikit-learn
-
-License
-
-This project is licensed under the MIT License.
-
-This format provides an easy-to-follow explanation of the code, along with an example of how to use it.
